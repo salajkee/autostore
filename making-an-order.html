@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper-boundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <div class="mask">
+        <div class="loader">
+            <div class="isometric">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="wrapper makeorder-page">
+        <header class="header">
+            <div class="header__menu">
+                <div class="header__menu-divider"></div>
+                <div class="header__menu-user">
+                    <a href="#" class="header__menu-login">Вход</a>
+                    <a href="#" class="header__menu-registration">Регистрация</a>
+                </div>
+                <div class="header__menu-divider"></div>
+                <nav class="header__menu-nav">
+                    <ul class="header__menu-nav-menu">
+                        <li class="header__menu-nav-list"><a href="#" class="header__menu-nav-link">Выкуп автомобилей</a></li>
+                        <li class="header__menu-nav-list"><a href="#" class="header__menu-nav-link">Страхование</a></li>
+                        <li class="header__menu-nav-list"><a href="#" class="header__menu-nav-link">Помощь</a></li>
+                        <li class="header__menu-nav-list"><a href="#" class="header__menu-nav-link">Доставка</a></li>
+                        <li class="header__menu-nav-list"><a href="#" class="header__menu-nav-link">Контакты</a></li>
+                        <li class="header__menu-nav-list"><a href="#" class="header__menu-nav-link">О нас</a></li>
+                    </ul>
+                </nav>
+                <div class="header__menu-divider"></div>
+            </div>
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-inner">
+                        <div class="header__top-left">
+                            <div class="header__top-telephone">
+                                <svg class="call-icon">
+                                    <use xlink:href="sprite.svg#call-svg"></use>
+                                </svg>
+                                <a href="tel:+74951384182" class="header__top-telephone-number">+7(495)138-41-82</a>
+                            </div>
+                            <div class="header__top-email">
+                                <svg class="email-icon">
+                                    <use xlink:href="sprite.svg#email-svg"></use>
+                                </svg>
+                                <a href="mailto:info@autostore.ru" class="header__top-email-link">info@autostore.ru</a>
+                            </div>
+                        </div>
+                        <div class="header__top-right">
+                            <div class="header__top-registration">
+                                <svg class="user-icon">
+                                    <use xlink:href="sprite.svg#user-svg"></use>
+                                </svg>
+                                <a href="#" class="header__top-registration-link">Регистрация</a>
+                            </div>
+                            <a href="#" class="header__top-login">Войти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__main">
+                <div class="container">
+                    <div class="header__main-inner">
+                        <a href="#" class="header__logo">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                        <form class="header__main-search-form">
+                            <input class="header__main-search-form-input" placeholder="Поиск товаров" type="text">
+                            <select class="header__main-search-form-select" name="all-products-search" id="all-products-search">
+                                <option value="all-products">Все товары</option>
+                                <option value="diski">Диски</option>
+                                <option value="Shini">Шины</option>
+                            </select>
+                            <button type="submit" class="header__main-search-form-btn">
+                                <svg class="search-icon">
+                                    <use xlink:href="sprite.svg#search-svg"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <a href="#" class="header__main-favorite">
+                            <svg class="favorite-icon">
+                                <use xlink:href="sprite.svg#favorite-svg"></use>
+                            </svg>
+                            <div class="header__main-favorite-inner">
+                                <p class="header__main-favorite-text">Избранные</p>
+                                <span class="header__main-favorite-count">000</span>
+                            </div>
+                        </a>
+                        <a href="#" class="header__main-basket">
+                            <div class="header__main-basket-icon">
+                                <svg class="basket-icon">
+                                    <use xlink:href="sprite.svg#basket-svg"></use>
+                                </svg>
+                                <span class="header__main-basket-count">10</span>
+                            </div>
+                            <div class="header__main-basket-inner">
+                                <p class="header__main-basket-text">В корзине</p>
+                                <span class="header__main-basket-sum">$85</span>
+                            </div>
+                        </a>
+                        <div class="hamburger">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="header__bottom-inner">
+                        <div class="header__bottom-all">
+                            <div class="header__bottom-catalog-btn">
+                                <a href="#" class="header__all-categories">
+                                    <span></span>
+                                    Каталог товаров
+                                </a>
+                            </div>
+                        </div>
+                        <nav class="header__bottom-nav">
+                            <ul class="header__bottom-nav-menu">
+                                <li class="header__bottom-nav-list"><a href="#" class="header__bottom-nav-link">Выкуп автомобилей</a></li>
+                                <li class="header__bottom-nav-list"><a href="#" class="header__bottom-nav-link">Страхование</a></li>
+                                <li class="header__bottom-nav-list"><a href="#" class="header__bottom-nav-link">Помощь</a></li>
+                                <li class="header__bottom-nav-list"><a href="#" class="header__bottom-nav-link">Доставка</a></li>
+                                <li class="header__bottom-nav-list"><a href="#" class="header__bottom-nav-link">Контакты</a></li>
+                                <li class="header__bottom-nav-list"><a href="#" class="header__bottom-nav-link">О нас</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="category__overlay"></div>
+                    <div class="category">
+                        <div class="category__wrapper">
+                            <div class="category__nav">
+                                <ul class="category__nav-menu">
+                                    <li data-attr="1" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Каталоги с подбором по авто</a>
+                                        <div class="sub-menu__wrapper sub-menu__wrapper-1">
+                                            <div class="sub-menu__wrapper-block">
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Подшипник вала вторичного КПП ВАЗ 2101-07, 50306, 6306N</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Головка блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Головка блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Головка блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Головка блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Головка блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Головка блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Головка блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Головка блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Головка блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li  data-attr="2" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Автозапчасти</a>
+                                        <div class="sub-menu__wrapper sub-menu__wrapper-2">
+                                            <div class="sub-menu__wrapper-block">
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">блок</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-attr="3" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Автокосметика и автохимия</a>
+                                    </li>
+                                    <li data-attr="4" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Аксессуары</a>
+                                    </li>
+                                    <li data-attr="5" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Аккумуляторы и принадлежности</a>
+                                    </li>
+                                    <li data-attr="6" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Инструмент</a>
+                                    </li>
+                                    <li data-attr="7" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Лампы</a>
+                                    </li>
+                                    <li data-attr="8" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Масла и жидкости</a>
+                                    </li>
+                                    <li data-attr="9" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Материалы для покраски</a>
+                                    </li>
+                                    <li data-attr="10" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Мотозапчасти</a>
+                                    </li>
+                                    <li data-attr="11" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Электроника, мультимедиа</a>
+                                    </li>
+                                    <li data-attr="12" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Шины, диски и принадлежности</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__link">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__link">
+                            <a href="#">Корзина</a>
+                        </li>
+                        <li class="breadcrumbs__link">
+                            <span>Оформление заказа</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="makeorder">
+                <div class="container">
+                    <div class="makeorder__wrapper">
+                        <div class="makeorder__top">
+                            <h2 class="makeorder__title">Оформление заказа</h2>
+                            <div class="makeorder__delete-btn">
+                                Удалить отмеченные
+                                <svg class="delete-icon">
+                                    <use xlink:href="sprite.svg#delete-icon"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="makeorder__table-wrapper">
+                            <div class="makeorder__table">
+                                <ul class="makeorder__table-header">
+                                    <li class="makeorder__table-header-list">Артикул</li>
+                                    <li class="makeorder__table-header-list">Наименование товара</li>
+                                    <li class="makeorder__table-header-list">Количество</li>
+                                    <li class="makeorder__table-header-list">Цена</li>
+                                    <li class="makeorder__table-header-list">Сумма</li>
+                                </ul>
+                                <ul class="makeorder__table-body">
+                                    <li class="makeorder__table-body-list">
+                                        <input class="makeorder__table-body-checkbox custom__checkbox" id="makeorder-body-check" type="checkbox">
+                                    </li>
+                                    <li class="makeorder__table-body-list artProduct">KRES0182</li>
+                                    <li class="makeorder__table-body-list">
+                                        Кресло детское автомобильное группа 0 от 0 кг. до 13 кг. красное ZLATEK COLIBRI КРЕС0182
+                                    </li>
+                                    <li class="makeorder__table-body-list">
+                                        <div class="makeorder__table-body-counter">
+                                            <a href="#" class="makeorder__table-body-counter-minus">
+                                            <svg class="minus-icon">
+                                                <use xlink:href="sprite.svg#minus-icon"></use>
+                                            </svg>
+                                            </a>
+                                            <input class="makeorder__table-body-counter-input" type="text" value="1">
+                                            <a href="#" class="makeorder__table-body-counter-plus">
+                                            <svg class="plus-icon">
+                                                <use xlink:href="sprite.svg#plus-icon"></use>
+                                            </svg>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="makeorder__table-body-list quantityPrice">3223</li>
+                                    <li class="makeorder__table-body-list totalPrice">3223</li>
+                                    <li class="makeorder__table-body-list">
+                                        <svg class="delete-icon">
+                                            <use xlink:href="sprite.svg#delete-icon"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <ul class="makeorder__table-body">
+                                    <li class="makeorder__table-body-list">
+                                        <input class="makeorder__table-body-checkbox custom__checkbox" id="makeorder-body-check" type="checkbox">
+                                    </li>
+                                    <li class="makeorder__table-body-list artProduct">KRES0182</li>
+                                    <li class="makeorder__table-body-list">
+                                        Кресло детское автомобильное группа 0 от 0 кг. до 13 кг. красное ZLATEK COLIBRI КРЕС0182
+                                    </li>
+                                    <li class="makeorder__table-body-list">
+                                        <div class="makeorder__table-body-counter">
+                                            <a href="#" class="makeorder__table-body-counter-minus">
+                                            <svg class="minus-icon">
+                                                <use xlink:href="sprite.svg#minus-icon"></use>
+                                            </svg>
+                                            </a>
+                                            <input class="makeorder__table-body-counter-input" type="text" value="1">
+                                            <a href="#" class="makeorder__table-body-counter-plus">
+                                            <svg class="plus-icon">
+                                                <use xlink:href="sprite.svg#plus-icon"></use>
+                                            </svg>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="makeorder__table-body-list quantityPrice">3223</li>
+                                    <li class="makeorder__table-body-list totalPrice">3223</li>
+                                    <li class="makeorder__table-body-list">
+                                        <svg class="delete-icon">
+                                            <use xlink:href="sprite.svg#delete-icon"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <ul class="makeorder__table-body">
+                                    <li class="makeorder__table-body-list">
+                                        <input class="makeorder__table-body-checkbox custom__checkbox" id="makeorder-body-check" type="checkbox">
+                                    </li>
+                                    <li class="makeorder__table-body-list artProduct">KRES0182</li>
+                                    <li class="makeorder__table-body-list">
+                                        Кресло детское автомобильное группа 0 от 0 кг. до 13 кг. красное ZLATEK COLIBRI КРЕС0182
+                                    </li>
+                                    <li class="makeorder__table-body-list">
+                                        <div class="makeorder__table-body-counter">
+                                            <a href="#" class="makeorder__table-body-counter-minus">
+                                            <svg class="minus-icon">
+                                                <use xlink:href="sprite.svg#minus-icon"></use>
+                                            </svg>
+                                            </a>
+                                            <input class="makeorder__table-body-counter-input" type="text" value="1">
+                                            <a href="#" class="makeorder__table-body-counter-plus">
+                                            <svg class="plus-icon">
+                                                <use xlink:href="sprite.svg#plus-icon"></use>
+                                            </svg>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="makeorder__table-body-list quantityPrice">3223</li>
+                                    <li class="makeorder__table-body-list totalPrice">3223</li>
+                                    <li class="makeorder__table-body-list">
+                                        <svg class="delete-icon">
+                                            <use xlink:href="sprite.svg#delete-icon"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clientinfo">
+                <div class="container">
+                    <h2 class="clientinfo__title">Информация о клиенте</h2>
+                    <div class="clientinfo__form-type-delivery">
+                        Тип доставки*
+                        <div class="clientinfo__form-type-input-block">
+                            <input class="clientinfo__form-type-delivery-pickup custom__checkbox" id="type-delivery-pickup" type="radio" name="type-delivery-radio" checked>
+                            <label for="type-delivery-pickup">Самовывоз</label>
+                        </div>
+                        <div class="clientinfo__form-type-input-block">
+                            <input class="clientinfo__form-type-delivery-delivery custom__checkbox" id="type-delivery-delivery" type="radio" name="type-delivery-radio">
+                            <label for="type-delivery-delivery">Доставка СДЭК</label>
+                        </div>
+                        <div class="clientinfo__form-type-input-block">
+                            <input class="clientinfo__form-type-delivery-yandex custom__checkbox" id="type-delivery-yandex" type="radio" name="type-delivery-radio">
+                            <label for="type-delivery-yandex">Яндекс Доставка</label>
+                        </div>
+                        <div class="clientinfo__dropdown custom__select-dropdown">
+                            <div class="clientinfo__select custom__select">
+                                <span class="clientinfo__selected custom__select-selected" id="type-delivery-select">Самовывоз</span>
+                                <div class="clientinfo__select-arrow custom__select-arrow">
+                                    <svg class="clientinfo__select-arrow-icon custom__select-arrow-icon">
+                                        <use xlink:href="sprite.svg#next-btn"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <ul class="clientinfo__select-menu custom__select-menu">
+                                <li class="pickup-select active">Самовывоз</li>
+                                <li class="delivery-select">Доставка СДЭК</li>
+                                <li class="yandexdel-select">Яндекс Доставка</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pickupaddress">
+                <div class="container">
+                    <form action="#" class="clientinfo__form">
+                        <div class="clientinfo__form-inputs">
+                            <div class="clientinfo__form-input-block">
+                                <label for="clientinfo__form-lastName">Фамилия*</label>
+                                <input type="text" class="clientinfo__form-lastName" id="clientinfo__form-lastName">
+                            </div>
+                            <div class="clientinfo__form-input-block">
+                                <label for="clientinfo__form-name">Имя*</label>
+                                <input type="text" class="clientinfo__form-name" id="clientinfo__form-name">
+                            </div>
+                            <div class="clientinfo__form-input-block">
+                                <label for="clientinfo__form-patronymic">Отчество</label>
+                                <input type="text" class="clientinfo__form-patronymic" id="clientinfo__form-patronymic">
+                            </div>
+                            <div class="clientinfo__form-input-block">
+                                <label for="clientinfo__form-email">E-mail*</label>
+                                <input type="text" class="clientinfo__form-email" id="clientinfo__form-email">
+                            </div>
+                            <div class="clientinfo__form-input-block">
+                                <label for="clientinfo__form-telephone">Телефон*</label>
+                                <input type="text" class="clientinfo__form-telephone" id="clientinfo__form-telephone">
+                            </div>
+                            <div class="clientinfo__form-input-block clientinfo__form-input-comments">
+                                <label for="clientinfo__form-comment">Комментарий клиента</label>
+                                <textarea class="clientinfo__form-comment" name="clientinfo__form-comment" id="clientinfo__form-comment"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                    <h2 class="pickupaddress__title">Адрес самовывоза</h2>
+                    <div class="pickupaddress__address">г.Кашира ул.Меженинова д.1</div>
+                    <div class="pickupaddress__map" id="pickup-map">
+                        <script src="https://api-maps.yandex.ru/2.1/?apikey=d37799cb-e573-496a-8d33-efeacc067b35&lang=ru_RU"></script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deladdress hidden">
+                <div class="container">
+                    <form action="#" class="clientinfo__form">
+                        <div class="clientinfo__form-inputs">
+                            <div class="clientinfo__form-input-block">
+                                <label for="clientinfo__form-lastName">Фамилия*</label>
+                                <input type="text" class="clientinfo__form-lastName" id="clientinfo__form-lastName">
+                            </div>
+                            <div class="clientinfo__form-input-block">
+                                <label for="clientinfo__form-name">Имя*</label>
+                                <input type="text" class="clientinfo__form-name" id="clientinfo__form-name">
+                            </div>
+                            <div class="clientinfo__form-input-block">
+                                <label for="clientinfo__form-patronymic">Отчество</label>
+                                <input type="text" class="clientinfo__form-patronymic" id="clientinfo__form-patronymic">
+                            </div>
+                            <div class="clientinfo__form-input-block">
+                                <label for="clientinfo__form-email">E-mail*</label>
+                                <input type="text" class="clientinfo__form-email" id="clientinfo__form-email">
+                            </div>
+                            <div class="clientinfo__form-input-block">
+                                <label for="clientinfo__form-telephone">Телефон*</label>
+                                <input type="text" class="clientinfo__form-telephone" id="clientinfo__form-telephone">
+                            </div>
+                            <div class="clientinfo__form-input-block clientinfo__form-input-comments">
+                                <label for="clientinfo__form-comment">Комментарий клиента</label>
+                                <textarea class="clientinfo__form-comment" name="clientinfo__form-comment" id="clientinfo__form-comment"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                    <h2 class="deladdress__title">Адрес доставки</h2>
+                    <ul class="deladdress__list">
+                        <li>Укажите город доставки (по умолчанию г.Москва)</li>
+                        <li>Выберете способ доставки</li>
+                        <li>Введите адрес доставки в появившемся окне или выберете ПВЗ или постамат  на карте</li>
+                        <li>Проверьте выбранный адрес</li>
+                    </ul>
+                    <div class="deladdress__widget">
+                        <img src="images/widget.png" alt="">
+                    </div>
+                    <div class="deladdress__selected-address">
+                        <label for="selected-address">Выбранный адрес доставки</label>
+                        <input type="text" id="selected-address">
+                    </div>
+                    <h2 class="productinfo__title">Информация о товаре</h2>
+                    <div class="productinfo__inputs">
+                        <div class="productinfo__input-block">
+                            <label for="total-weight">Общий вес товара,кг</label>
+                            <input type="text" id="total-weight">
+                        </div>
+                        <div class="productinfo__input-block">
+                            <label for="package-length">Длина упаковки,см</label>
+                            <input type="text" id="package-length">
+                        </div>
+                        <div class="productinfo__input-block">
+                            <label for="package-width">Ширина упаковки,см</label>
+                            <input type="text" id="package-width">
+                        </div>
+                        <div class="productinfo__input-block">
+                            <label for="package-height">Высота упаковки,см</label>
+                            <input type="text" id="package-height">
+                        </div>
+                        <div class="productinfo__input-block">
+                            <label for="quantity-product">Количество,шт</label>
+                            <input type="text" id="quantity-product">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="yandexdel hidden">
+                <div class="container">
+                    <div class="yandexdel__tabs">
+                        <button class="yandexdel__tabs-btn yandexdel__tabs-btn-active">Доставить до двери</button>
+                        <button class="yandexdel__tabs-btn">Доставить в пункт выдачи</button>
+                    </div>
+                    <form action="#" class="clientinfo__form">
+                        <div class="clientinfo__form-inputs">
+                            <div class="clientinfo__form-input-block">
+                                <label for="clientinfo__form-lastName">Фамилия*</label>
+                                <input type="text" class="clientinfo__form-lastName" id="clientinfo__form-lastName">
+                            </div>
+                            <div class="clientinfo__form-input-block">
+                                <label for="clientinfo__form-name">Имя*</label>
+                                <input type="text" class="clientinfo__form-name" id="clientinfo__form-name">
+                            </div>
+                            <div class="clientinfo__form-input-block">
+                                <label for="clientinfo__form-patronymic">Отчество</label>
+                                <input type="text" class="clientinfo__form-patronymic" id="clientinfo__form-patronymic">
+                            </div>
+                            <div class="clientinfo__form-input-block">
+                                <label for="clientinfo__form-email">E-mail*</label>
+                                <input type="text" class="clientinfo__form-email" id="clientinfo__form-email">
+                            </div>
+                            <div class="clientinfo__form-input-block">
+                                <label for="clientinfo__form-telephone">Телефон*</label>
+                                <input type="text" class="clientinfo__form-telephone" id="clientinfo__form-telephone">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="yandexdel__tabs-content">
+                        <h2 class="yandexdel__title">Адрес доставки</h2>
+                        <ul class="yandexdel__list">
+                            <li>Укажите адрес доставки*</li>
+                        </ul>
+                        <div class="yandexdel__widget">
+                            <img src="images/widget.png" alt="">
+                        </div>
+                        <h2 class="orderinfo__title">Информация о заказе</h2>
+                        <div class="orderinfo__input-block">
+                            <label for="order-num">Ваш номер заказа</label>
+                            <input type="text" id="order-num" readonly>
+                        </div>
+                        <h2 class="productinfo__title">Информация о товаре</h2>
+                        <div class="productinfo__inputs">
+                            <div class="productinfo__input-block">
+                                <label for="total-weight">Общий вес товара,кг</label>
+                                <input type="text" id="total-weight">
+                            </div>
+                            <div class="productinfo__input-block">
+                                <label for="package-length">Длина упаковки,см</label>
+                                <input type="text" id="package-length">
+                            </div>
+                            <div class="productinfo__input-block">
+                                <label for="package-width">Ширина упаковки,см</label>
+                                <input type="text" id="package-width">
+                            </div>
+                            <div class="productinfo__input-block">
+                                <label for="package-height">Высота упаковки,см</label>
+                                <input type="text" id="package-height">
+                            </div>
+                            <div class="productinfo__input-block">
+                                <label for="quantity-product">Количество,шт</label>
+                                <input type="text" id="quantity-product">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="yandexdel__tabs-content">
+                        <h2 class="yandexdel__title">Адрес доставки</h2>
+                        <ul class="yandexdel__list">
+                            <li>Выберите пункт выдачи*</li>
+                        </ul>
+                        <div class="yandexdel__widget">
+                            <img src="images/widget.png" alt="">
+                        </div>
+                        <h2 class="orderinfo__title">Информация о заказе</h2>
+                        <div class="orderinfo__input-block">
+                            <label for="order-num">Ваш номер заказа</label>
+                            <input type="text" id="order-num" readonly>
+                        </div>
+                        <h2 class="productinfo__title">Информация о товаре</h2>
+                        <div class="productinfo__inputs">
+                            <div class="productinfo__input-block">
+                                <label for="total-weight">Общий вес товара,кг</label>
+                                <input type="text" id="total-weight">
+                            </div>
+                            <div class="productinfo__input-block">
+                                <label for="package-length">Длина упаковки,см</label>
+                                <input type="text" id="package-length">
+                            </div>
+                            <div class="productinfo__input-block">
+                                <label for="package-width">Ширина упаковки,см</label>
+                                <input type="text" id="package-width">
+                            </div>
+                            <div class="productinfo__input-block">
+                                <label for="package-height">Высота упаковки,см</label>
+                                <input type="text" id="package-height">
+                            </div>
+                            <div class="productinfo__input-block">
+                                <label for="quantity-product">Количество,шт</label>
+                                <input type="text" id="quantity-product">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="makeorder__bot">
+                <div class="container">
+                    <div class="makeorder__bot-wrapper">
+                        <div class="makeorder__bot-left">
+                            <div class="makeorder__bot-left-title">
+                                Обратите внимание на дополнительную информацию:
+                            </div>
+                            <div class="makeorder__bot-left-addinfo">
+                                ОБНОВЛЕНО 24.10.2022г.
+                                <br><br>
+                                1. Правила получения товара при доставке или самовывозе: <br>
+                                1.1. Передача заказов клиентам при доставке или самовывозе осуществляется строго «по местам» за исключением товаров категории «хрупкие» и «крупногабаритные» (см. пункт 1.2); <br>
+                                1.2. Крупногабаритные и хрупкие детали (капоты, крылья, фары и т.д.) необходимо осматривать непосредственно в момент получения от представителя магазина или при курьере ТК. В случае, если деталь имеет дефекты, клиент в праве отказаться от нее на месте. Претензии при выявлении дефектов после получения детали, не принимаются; <br>
+                                1.3. Отправка кузовных деталей через ТК производится только в обрешетке. Оплата обрешетки в ТК за счет покупателя;
+                                <br><br>
+                                2. Правила и ограничения при возврате товара: <br>
+                                2.1. Возврат товара от покупателей осуществляется согласно чеку, количеству и цене, указанным в заявке на рассмотрение возврата. Документы для проведения возврата также должны соответствовать заявке на рассмотрение возврата (несколько заявок на возврат нельзя объединять в один документ). Возврат оформляется, как корректировка реализации с соблюдением всех правил этой процедуры; <br>
+                                2.2. Невозможен возврат товаров из группы горюче смазочных материалов (ГСМ) и иных эксплуатационных жидкостей;
+                                <br><br>
+                                2. Правила и ограничения при возврате товара: <br>
+                                2.1. Возврат товара от покупателей осуществляется согласно чеку, количеству и цене, указанным в заявке на рассмотрение возврата. Документы для проведения возврата также должны соответствовать заявке на рассмотрение возврата (несколько заявок на возврат нельзя объединять в один документ). Возврат оформляется, как корректировка реализации с соблюдением всех правил этой процедуры; <br>
+                                2.2. Невозможен возврат товаров из группы горюче смазочных материалов (ГСМ) и иных эксплуатационных жидкостей;
+                            </div>
+                            <div class="makeorder__bot-left-bot">
+                                <div class="makeorder__bot-left-agree-terms">
+                                    <input type="checkbox" class="custom__checkbox" id="makeorder-agree-terms">
+                                    <label for="makeorder-agree-terms">Согласен с условиями</label>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="makeorder__bot-right">
+                            <div class="makeorder__bot-right-select-payment-method">
+                                <div class="makeorder__bot-right-dropdown custom__select-dropdown">
+                                    <div class="makeorder__bot-right-select custom__select">
+                                        <span class="makeorder__bot-right-selected custom__select-selected" id="payment-method-select">Выберете способ оплаты</span>
+                                        <div class="makeorder__bot-right-select-arrow custom__select-arrow">
+                                            <svg class="makeorder__bot-right-select-arrow-icon custom__select-arrow-icon">
+                                                <use xlink:href="sprite.svg#next-btn"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <ul class="makeorder__bot-right-select-menu custom__select-menu">
+                                        <li class="makeorder__payment-1">Оплата картой на сайте</li>
+                                        <li class="makeorder__payment-2">Оплата наличными (картой) при получении</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="makeorder__bot-right-total-order">
+                                <div class="makeorder__bot-right-total">
+                                    <p class="makeorder__bot-right-total-text">Итого</p>
+                                    <div class="makeorder__bot-right-total-summ"><span>65 900</span> ₽</div>
+                                </div>
+                                <div class="makeorder__bot-right-right-item">
+                                    <div class="makeorder__bot-right-right-item-left">Товаров, 4 шт</div>
+                                    <div class="makeorder__bot-right-right-item-right">65 900 ₽</div>
+                                </div>
+                                <div class="makeorder__bot-right-right-item">
+                                    <div class="makeorder__bot-right-right-item-left">Скидка</div>
+                                    <div class="makeorder__bot-right-right-item-right makeorder__bot-right-right-item-right-red"><span>0</span> ₽</div>
+                                </div>
+                                <div class="makeorder__bot-right-right-item">
+                                    <div class="makeorder__bot-right-right-item-left">Доставка</div>
+                                    <div class="makeorder__bot-right-right-item-right"><span>2000</span> ₽</div>
+                                </div>
+                            </div>
+                            <div class="makeorder__bot-right-bank-btns">
+                                <a href="#" class="makeorder__bot-right-bank-link">
+                                    <div class="makeorder__bot-right-bank-link-block">
+                                        <div class="makeorder__bot-right-bank-link-title">Купить в кредит</div>
+                                        <div class="makeorder__bot-right-bank-link-summ">от <span>3500</span> ₽ в месяц</div>
+                                    </div>
+                                    <img src="images/tinkoff-logo.svg" alt="">
+                                </a>
+                                <a href="#" class="makeorder__bot-right-bank-link">
+                                    <div class="makeorder__bot-right-bank-link-block">
+                                        <div class="makeorder__bot-right-bank-link-title">Оформить рассрочку</div>
+                                        <div class="makeorder__bot-right-bank-link-summ">от <span>3500</span> ₽ в месяц</div>
+                                    </div>
+                                    <img src="images/tinkoff-logo.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="makeorder__bot-btns">
+                        <a href="#" class="makeorder__returntocart-btn">
+                            <svg class="left-arrow">
+                                <use xlink:href="sprite.svg#left-arrow"></use>
+                            </svg>
+                            Вернуться в корзину
+                        </a>
+                        <div class="makeorder__bot-btns-wrap">
+                            <a href="#" class="makeorder__pay-card-btn hidden">
+                                Оплатить
+                                <img src="images/credit-card.svg" alt="">
+                            </a>
+                            <a href="#" class="makeorder__pay-cash-btn hidden">
+                                Оформить заказ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mailing">
+                <div class="container">
+                    <div class="mailing__wrapper">
+                        <svg class="mailing__icon">
+                            <use xlink:href="sprite.svg#mailer-icon"></use>
+                        </svg>
+                        <div class="mailing__text">Получайте самые выгодные предложения первыми!</div>
+                        <form class="mailing__form">
+                            <input class="mailing__form-input" type="text" placeholder="Введите e-mail">
+                            <button class="mailing__form-btn" type="submit">Подписаться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="container">
+                    <div class="footer__top-inner">
+                        <div class="footer__left">
+                            <a href="#" class="footer__logo">
+                                <img src="images/logo.png" alt="">
+                            </a>
+                            <a href="#" class="footer__telephone">
+                                +7(495) 138-41-82
+                            </a> 
+                            <p class="footer__telephone-info">Приём звонков: 9:00 - 22:00</p>
+                            <a href="mailto:info@autostore.ru" class="footer__email">info@autostore.ru</a>
+                            <div class="footer__social">
+                                <a href="#" class="footer__social-link">
+                                    <svg class="telegram-icon">
+                                        <use xlink:href="sprite.svg#telegram-svg"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="footer__social-link">
+                                    <svg class="vk-icon">
+                                        <use xlink:href="sprite.svg#vk-svg"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <p class="footer__item-title">Найди это быстро</p>
+                            <div class="footer__item-inner">
+                                <ul class="footer__item-menu">
+                                    <li class="footer__item-list">
+                                        <a href="#" class="footer__item-link">Выкуп автомобилей</a>
+                                    </li>
+                                    <li class="footer__item-list">
+                                        <a href="#" class="footer__item-link">Cтрахование</a>
+                                    </li>
+                                    <li class="footer__item-list">
+                                        <a href="#" class="footer__item-link">Помощь</a>
+                                    </li>
+                                    <li class="footer__item-list">
+                                        <a href="#" class="footer__item-link">Доставка</a>
+                                    </li>
+                                    <li class="footer__item-list">
+                                        <a href="#" class="footer__item-link">Контакты</a>
+                                    </li>
+                                    <li class="footer__item-list">
+                                        <a href="#" class="footer__item-link">О нас</a>
+                                    </li>
+                                </ul>
+                                <div class="footer__item-inner-links">
+                                    <a href="#" class="footer__item-inner-link">Положение об обработке и защите персональных данных</a>
+                                    <a href="#" class="footer__item-inner-link">Пользовательское соглашение</a>
+                                    <a href="#" class="footer__item-inner-link">Договор оферты</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__right">
+                            <a href="#" class="footer__right-link">
+                                <img src="images/appstore.svg" alt="">
+                            </a>
+                            <a href="#" class="footer__right-link">
+                                <img src="images/googleplay.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__bottom-inner">
+                        <p class="footer__bottom-info">
+                            AUTOSTORE © 2022 | Все права защищены
+                        </p>
+                        <div class="footer__bottom-pay">
+                            <img src="images/mastercard.svg" alt="">
+                            <img src="images/visa-logo.svg" alt="">
+                            <img src="images/PayPal.svg" alt="">
+                            <img src="images/maestro.svg" alt="">
+                            <img src="images/mircard.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/swiper-boundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

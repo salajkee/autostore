@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper-boundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <div class="mask">
+        <div class="loader">
+            <div class="isometric">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="wrapper catalog-page">
+        <header class="header">
+            <div class="header__menu">
+                <div class="header__menu-divider"></div>
+                <div class="header__menu-user">
+                    <a href="#" class="header__menu-login">Вход</a>
+                    <a href="#" class="header__menu-registration">Регистрация</a>
+                </div>
+                <div class="header__menu-divider"></div>
+                <nav class="header__menu-nav">
+                    <ul class="header__menu-nav-menu">
+                        <li class="header__menu-nav-list"><a href="#" class="header__menu-nav-link">Выкуп автомобилей</a></li>
+                        <li class="header__menu-nav-list"><a href="#" class="header__menu-nav-link">Страхование</a></li>
+                        <li class="header__menu-nav-list"><a href="#" class="header__menu-nav-link">Помощь</a></li>
+                        <li class="header__menu-nav-list"><a href="#" class="header__menu-nav-link">Доставка</a></li>
+                        <li class="header__menu-nav-list"><a href="#" class="header__menu-nav-link">Контакты</a></li>
+                        <li class="header__menu-nav-list"><a href="#" class="header__menu-nav-link">О нас</a></li>
+                    </ul>
+                </nav>
+                <div class="header__menu-divider"></div>
+            </div>
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-inner">
+                        <div class="header__top-left">
+                            <div class="header__top-telephone">
+                                <svg class="call-icon">
+                                    <use xlink:href="sprite.svg#call-svg"></use>
+                                </svg>
+                                <a href="tel:+74951384182" class="header__top-telephone-number">+7(495)138-41-82</a>
+                            </div>
+                            <div class="header__top-email">
+                                <svg class="email-icon">
+                                    <use xlink:href="sprite.svg#email-svg"></use>
+                                </svg>
+                                <a href="mailto:info@autostore.ru" class="header__top-email-link">info@autostore.ru</a>
+                            </div>
+                        </div>
+                        <div class="header__top-right">
+                            <div class="header__top-registration">
+                                <svg class="user-icon">
+                                    <use xlink:href="sprite.svg#user-svg"></use>
+                                </svg>
+                                <a href="#" class="header__top-registration-link">Регистрация</a>
+                            </div>
+                            <a href="#" class="header__top-login">Войти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__main">
+                <div class="container">
+                    <div class="header__main-inner">
+                        <a href="#" class="header__logo">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                        <form class="header__main-search-form">
+                            <input class="header__main-search-form-input" placeholder="Поиск товаров" type="text">
+                            <select class="header__main-search-form-select" name="all-products-search" id="all-products-search">
+                                <option value="all-products">Все товары</option>
+                                <option value="diski">Диски</option>
+                                <option value="Shini">Шины</option>
+                            </select>
+                            <button type="submit" class="header__main-search-form-btn">
+                                <svg class="search-icon">
+                                    <use xlink:href="sprite.svg#search-svg"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <a href="#" class="header__main-favorite">
+                            <svg class="favorite-icon">
+                                <use xlink:href="sprite.svg#favorite-svg"></use>
+                            </svg>
+                            <div class="header__main-favorite-inner">
+                                <p class="header__main-favorite-text">Избранные</p>
+                                <span class="header__main-favorite-count">000</span>
+                            </div>
+                        </a>
+                        <a href="#" class="header__main-basket">
+                            <div class="header__main-basket-icon">
+                                <svg class="basket-icon">
+                                    <use xlink:href="sprite.svg#basket-svg"></use>
+                                </svg>
+                                <span class="header__main-basket-count">10</span>
+                            </div>
+                            <div class="header__main-basket-inner">
+                                <p class="header__main-basket-text">В корзине</p>
+                                <span class="header__main-basket-sum">$85</span>
+                            </div>
+                        </a>
+                        <div class="hamburger">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="header__bottom-inner">
+                        <div class="header__bottom-all">
+                            <div class="header__bottom-catalog-btn">
+                                <a href="#" class="header__all-categories">
+                                    <span></span>
+                                    Каталог товаров
+                                </a>
+                            </div>
+                        </div>
+                        <nav class="header__bottom-nav">
+                            <ul class="header__bottom-nav-menu">
+                                <li class="header__bottom-nav-list"><a href="#" class="header__bottom-nav-link">Выкуп автомобилей</a></li>
+                                <li class="header__bottom-nav-list"><a href="#" class="header__bottom-nav-link">Страхование</a></li>
+                                <li class="header__bottom-nav-list"><a href="#" class="header__bottom-nav-link">Помощь</a></li>
+                                <li class="header__bottom-nav-list"><a href="#" class="header__bottom-nav-link">Доставка</a></li>
+                                <li class="header__bottom-nav-list"><a href="#" class="header__bottom-nav-link">Контакты</a></li>
+                                <li class="header__bottom-nav-list"><a href="#" class="header__bottom-nav-link">О нас</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="category__overlay"></div>
+                    <div class="category">
+                        <div class="category__wrapper">
+                            <div class="category__nav">
+                                <ul class="category__nav-menu">
+                                    <li data-attr="1" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Каталоги с подбором по авто</a>
+                                        <div class="sub-menu__wrapper sub-menu__wrapper-1">
+                                            <div class="sub-menu__wrapper-block">
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Подшипник вала вторичного КПП ВАЗ 2101-07, 50306, 6306N</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Головка блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Головка блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Головка блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Головка блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Головка блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Головка блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Головка блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Головка блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Головка блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li  data-attr="2" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Автозапчасти</a>
+                                        <div class="sub-menu__wrapper sub-menu__wrapper-2">
+                                            <div class="sub-menu__wrapper-block">
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__list">
+                                                        <a href="#" class="sub-menu__link">Двигатель</a>
+                                                        <ul class="sub-sub-menu">
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">блок</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">блока</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Двигатель в сборе</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                            <li class="sub-sub-menu__list">
+                                                                <a href="#" class="sub-sub-menu__link">Блок цилиндров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-attr="3" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Автокосметика и автохимия</a>
+                                    </li>
+                                    <li data-attr="4" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Аксессуары</a>
+                                    </li>
+                                    <li data-attr="5" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Аккумуляторы и принадлежности</a>
+                                    </li>
+                                    <li data-attr="6" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Инструмент</a>
+                                    </li>
+                                    <li data-attr="7" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Лампы</a>
+                                    </li>
+                                    <li data-attr="8" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Масла и жидкости</a>
+                                    </li>
+                                    <li data-attr="9" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Материалы для покраски</a>
+                                    </li>
+                                    <li data-attr="10" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Мотозапчасти</a>
+                                    </li>
+                                    <li data-attr="11" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Электроника, мультимедиа</a>
+                                    </li>
+                                    <li data-attr="12" class="category__nav-list">
+                                        <a href="#" class="category__nav-link">Шины, диски и принадлежности</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__link">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__link">
+                            <span>Каталог</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="catalog">
+                <div class="container">
+                    <p class="catalog__title">Двигатель</p>
+                    <div class="catalog__top">
+                        <div class="catalog__top-sort">
+                            <label class="catalog__top-sort-label" for="catalog__top-sort">Сортировать по:</label>
+                            <select class="catalog__top-sort-select" name="cars" id="catalog__top-sort">
+                                <option value="volvo">По добавлению</option>
+                                <option value="saab">По добавлению</option>
+                            </select>
+                        </div>
+                        <button class="catalog__top-btngrid btn-grid active">
+                            <svg class="plitka-icon">
+                                <use xlink:href="sprite.svg#plitka-icon"></use>
+                            </svg>
+                        </button>
+                        <button class="catalog__top-btnline btn-line">
+                            <svg class="spisok-icon">
+                                <use xlink:href="sprite.svg#spisok-icon"></use>
+                            </svg>
+                        </button>
+                        <button class="catalog__top-filter-btn">
+                            <svg class="filter-icon">
+                                <use xlink:href="sprite.svg#filter-icon"></use>
+                            </svg>
+                            <span>Фильтр</span>
+                        </button>
+                    </div>
+                    <div class="catalog__inner">
+                        <aside class="catalog__inner-aside aside-filter">
+                            <div class="aside-filter__overlay"></div>
+                            <form class="aside-filter__form">
+                                <div class="aside-filter__hamburger">
+                                    <span></span>
+                                </div>
+                                <ul class="aside-filter__form-list">
+                                    <li class="aside-filter__item-drop">
+                                        <div class="aside-filter__item-title filter__item-drop">Цена</div>
+                                        <div class="aside-filter__content">
+                                            <div class="aside-filter__price">
+                                                <div class="aside-filter__price-from">
+                                                    <span>от</span>
+                                                    <input class="aside-filter__price-input" type="text" placeholder="4">
+                                                </div>
+                                                <div class="aside-filter__price-to">
+                                                    <span>до</span>
+                                                    <input class="aside-filter__price-input" type="text" placeholder="123456">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="aside-filter__item-drop">
+                                        <div class="aside-filter__item-title filter__item-drop">Бренд</div>
+                                        <div class="aside-filter__content">
+                                            <label class="aside-filter__content-label">
+                                                <input class="aside-filter__fast-search-input" type="text" id="fast-search" placeholder="Быстрый поиск">
+                                            </label>
+                                            <div class="aside-filter__content-inner">
+                                                <div class="aside-filter__content-box">
+                                                    <label class="aside-filter__content-box-label">
+                                                        <input class="aside-filter__content-box-checkbox custom__checkbox" id="check" type="checkbox">
+                                                        <span class="aside-filter__content-box-text">Bga</span>
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter__content-box">
+                                                    <label class="aside-filter__content-box-label">
+                                                        <input class="aside-filter__content-box-checkbox custom__checkbox" id="check" type="checkbox">
+                                                        <span class="aside-filter__content-box-text">Bga</span>
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter__content-box">
+                                                    <label class="aside-filter__content-box-label">
+                                                        <input class="aside-filter__content-box-checkbox custom__checkbox" id="check" type="checkbox">
+                                                        <span class="aside-filter__content-box-text">Bga</span>
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter__content-box">
+                                                    <label class="aside-filter__content-box-label">
+                                                        <input class="aside-filter__content-box-checkbox custom__checkbox" id="check" type="checkbox">
+                                                        <span class="aside-filter__content-box-text">Bga</span>
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter__content-box">
+                                                    <label class="aside-filter__content-box-label">
+                                                        <input class="aside-filter__content-box-checkbox custom__checkbox" id="check" type="checkbox">
+                                                        <span class="aside-filter__content-box-text">Bga</span>
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter__content-box">
+                                                    <label class="aside-filter__content-box-label">
+                                                        <input class="aside-filter__content-box-checkbox custom__checkbox" id="check" type="checkbox">
+                                                        <span class="aside-filter__content-box-text">Bga</span>
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter__content-box">
+                                                    <label class="aside-filter__content-box-label">
+                                                        <input class="aside-filter__content-box-checkbox custom__checkbox" id="check" type="checkbox">
+                                                        <span class="aside-filter__content-box-text">Bga</span>
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter__content-box">
+                                                    <label class="aside-filter__content-box-label">
+                                                        <input class="aside-filter__content-box-checkbox custom__checkbox" id="check" type="checkbox">
+                                                        <span class="aside-filter__content-box-text">Bga</span>
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter__content-box">
+                                                    <label class="aside-filter__content-box-label">
+                                                        <input class="aside-filter__content-box-checkbox custom__checkbox" id="check" type="checkbox">
+                                                        <span class="aside-filter__content-box-text">Bga</span>
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter__content-box">
+                                                    <label class="aside-filter__content-box-label">
+                                                        <input class="aside-filter__content-box-checkbox custom__checkbox" id="check" type="checkbox">
+                                                        <span class="aside-filter__content-box-text">Bga</span>
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter__content-box">
+                                                    <label class="aside-filter__content-box-label">
+                                                        <input class="aside-filter__content-box-checkbox custom__checkbox" id="check" type="checkbox">
+                                                        <span class="aside-filter__content-box-text">Bga</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="aside-filter__item-drop">
+                                        <div class="aside-filter__item-title filter__item-drop">Уцененный товар</div>
+                                        <div class="aside-filter__content">
+                                            <div class="aside-filter__content-inner aside-filter__content-discounted">
+                                                <div class="aside-filter__content-box">
+                                                    <label class="aside-filter__content-box-label">
+                                                        <input class="aside-filter__content-box-checkbox custom__checkbox" id="check" type="checkbox">
+                                                        <span class="aside-filter__content-box-text">Да</span>
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter__content-box">
+                                                    <label class="aside-filter__content-box-label">
+                                                        <input class="aside-filter__content-box-checkbox custom__checkbox" id="check" type="checkbox">
+                                                        <span class="aside-filter__content-box-text">Нет</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <button class="aside-filter__apply-btn">Применить</button>
+                                    <button class="aside-filter__reset-btn">Сбросить</button>
+                                </ul>
+                            </form>
+                        </aside>
+                        <div class="catalog__inner-list">
+                            <div class="catalog__inner-items">
+                                <div class="catalog__inner-item">
+                                    <button class="catalog__inner-item-add-fav add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="catalog__inner-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="catalog__inner-item-text-block">
+                                        <div class="catalog__inner-item-title">BMW</div>
+                                        <a href="#" class="catalog__inner-item-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, aliquam quidem!
+                                        </a>
+                                        <div class="catalog__inner-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    </div>
+                                    <div class="catalog__inner-item-bottom">
+                                        <div class="catalog__inner-item-price">10000$</div>
+                                        <button class="catalog__inner-item-toBasket">В корзину</button>
+                                        <div class="catalog__inner-item-availability">Наличие > <span>10</span>шт.</div>
+                                    </div>
+                                </div>
+                                <div class="catalog__inner-item">
+                                    <button class="catalog__inner-item-add-fav add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="catalog__inner-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="catalog__inner-item-text-block">
+                                        <div class="catalog__inner-item-title">BMW</div>
+                                        <a href="#" class="catalog__inner-item-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, aliquam quidem!
+                                        </a>
+                                        <div class="catalog__inner-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    </div>
+                                    <div class="catalog__inner-item-bottom">
+                                        <div class="catalog__inner-item-price">10000$</div>
+                                        <button class="catalog__inner-item-toBasket">В корзину</button>
+                                        <div class="catalog__inner-item-availability">Наличие > <span>10</span>шт.</div>
+                                    </div>
+                                </div>
+                                <div class="catalog__inner-item">
+                                    <button class="catalog__inner-item-add-fav add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="catalog__inner-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="catalog__inner-item-text-block">
+                                        <div class="catalog__inner-item-title">BMW</div>
+                                        <a href="#" class="catalog__inner-item-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, aliquam quidem!
+                                        </a>
+                                        <div class="catalog__inner-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    </div>
+                                    <div class="catalog__inner-item-bottom">
+                                        <div class="catalog__inner-item-price">10000$</div>
+                                        <button class="catalog__inner-item-toBasket">В корзину</button>
+                                        <div class="catalog__inner-item-availability">Наличие > <span>10</span>шт.</div>
+                                    </div>
+                                </div>
+                                <div class="catalog__inner-item">
+                                    <button class="catalog__inner-item-add-fav add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="catalog__inner-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="catalog__inner-item-text-block">
+                                        <div class="catalog__inner-item-title">BMW</div>
+                                        <a href="#" class="catalog__inner-item-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, aliquam quidem!
+                                        </a>
+                                        <div class="catalog__inner-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    </div>
+                                    <div class="catalog__inner-item-bottom">
+                                        <div class="catalog__inner-item-price">10000$</div>
+                                        <button class="catalog__inner-item-toBasket">В корзину</button>
+                                        <div class="catalog__inner-item-availability">Наличие > <span>10</span>шт.</div>
+                                    </div>
+                                </div>
+                                <div class="catalog__inner-item">
+                                    <button class="catalog__inner-item-add-fav add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="catalog__inner-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="catalog__inner-item-text-block">
+                                        <div class="catalog__inner-item-title">BMW</div>
+                                        <a href="#" class="catalog__inner-item-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, aliquam quidem!
+                                        </a>
+                                        <div class="catalog__inner-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    </div>
+                                    <div class="catalog__inner-item-bottom">
+                                        <div class="catalog__inner-item-price">10000$</div>
+                                        <button class="catalog__inner-item-toBasket">В корзину</button>
+                                        <div class="catalog__inner-item-availability">Наличие > <span>10</span>шт.</div>
+                                    </div>
+                                </div>
+                                <div class="catalog__inner-item">
+                                    <button class="catalog__inner-item-add-fav add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="catalog__inner-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="catalog__inner-item-text-block">
+                                        <div class="catalog__inner-item-title">BMW</div>
+                                        <a href="#" class="catalog__inner-item-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, aliquam quidem!
+                                        </a>
+                                        <div class="catalog__inner-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    </div>
+                                    <div class="catalog__inner-item-bottom">
+                                        <div class="catalog__inner-item-price">10000$</div>
+                                        <button class="catalog__inner-item-toBasket">В корзину</button>
+                                        <div class="catalog__inner-item-availability">Наличие > <span>10</span>шт.</div>
+                                    </div>
+                                </div>
+                                <div class="catalog__inner-item">
+                                    <button class="catalog__inner-item-add-fav add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="catalog__inner-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="catalog__inner-item-text-block">
+                                        <div class="catalog__inner-item-title">BMW</div>
+                                        <a href="#" class="catalog__inner-item-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, aliquam quidem!
+                                        </a>
+                                        <div class="catalog__inner-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    </div>
+                                    <div class="catalog__inner-item-bottom">
+                                        <div class="catalog__inner-item-price">10000$</div>
+                                        <button class="catalog__inner-item-toBasket">В корзину</button>
+                                        <div class="catalog__inner-item-availability">Наличие > <span>10</span>шт.</div>
+                                    </div>
+                                </div>
+                                <div class="catalog__inner-item">
+                                    <button class="catalog__inner-item-add-fav add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="catalog__inner-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="catalog__inner-item-text-block">
+                                        <div class="catalog__inner-item-title">BMW</div>
+                                        <a href="#" class="catalog__inner-item-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, aliquam quidem!
+                                        </a>
+                                        <div class="catalog__inner-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    </div>
+                                    <div class="catalog__inner-item-bottom">
+                                        <div class="catalog__inner-item-price">10000$</div>
+                                        <button class="catalog__inner-item-toBasket">В корзину</button>
+                                        <div class="catalog__inner-item-availability">Наличие > <span>10</span>шт.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="catalog__load-more">Показать ещё</button>
+                            <div class="pagination">
+                                <ul class="pagination-list">
+                                    <a href="#" class="pagination__prev-btn">
+                                        <svg class="pagination-left-arrow">
+                                            <use xlink:href="sprite.svg#pagination-left-arrow"></use>
+                                        </svg>       
+                                    </a>
+                                    <li class="pagination-list__item active">
+                                        <a href="#" class="pagination-list__link">1</a>
+                                    </li>
+                                    <li class="pagination-list__item">
+                                        <a href="#" class="pagination-list__link">2</a>
+                                    </li>
+                                    <li class="pagination-list__item">
+                                        <a href="#" class="pagination-list__link">3</a>
+                                    </li>
+                                    <li class="pagination-list__item">
+                                        <a href="#" class="pagination-list__link">4</a>
+                                    </li>
+                                    <li class="pagination-list__item">
+                                        <a href="#" class="pagination-list__link">5</a>
+                                    </li>
+                                    <li class="pagination-list__item">
+                                        <a href="#" class="pagination-list__item-btn">
+                                            <svg class="dubble-right-arrow">
+                                                <use xlink:href="sprite.svg#dubble-right-arrow"></use>
+                                            </svg>       
+                                        </a>
+                                    </li>
+                                    <li class="pagination-list__item">
+                                        <a href="#" class="pagination-list__link">254</a>
+                                    </li>
+                                    <a href="#" class="pagination__next-btn">
+                                        <svg class="pagination-right-arrow">
+                                            <use xlink:href="sprite.svg#pagination-right-arrow"></use>
+                                        </svg>       
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sales-hits">
+                <div class="container">
+                    <div class="sales-hits__wrapper">
+                        <div class="sales-hits__title">Хиты продаж в этой категории</div>
+                        <div class="sales-hits__divider"></div>
+                        <div class="sales-hits__slider">
+                            <div class="sales-hits__slider-wrapper swiper-wrapper">
+                                <div class="sales-hits__slider-item swiper-slide">
+                                    <button class="add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="sales-hits__slider-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="sales-hits__slider-item-title">BMW</div>
+                                    <a href="#" class="sales-hits__slider-item-text">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium?
+                                    </a>
+                                    <div class="sales-hits__slider-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    <div class="sales-hits__slider-item-price">10000$</div>
+                                    <button class="sales-hits__slider-item-toBasket">В корзину</button>
+                                    <div class="sales-hits__slider-item-availability">Наличие > <span>10</span>шт.</div>
+                                </div>
+                                <div class="sales-hits__slider-item swiper-slide">
+                                    <button class="add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="sales-hits__slider-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="sales-hits__slider-item-title">BMW</div>
+                                    <a href="#" class="sales-hits__slider-item-text">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium?
+                                    </a>
+                                    <div class="sales-hits__slider-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    <div class="sales-hits__slider-item-price">10000$</div>
+                                    <button class="sales-hits__slider-item-toBasket">В корзину</button>
+                                    <div class="sales-hits__slider-item-availability">Наличие > <span>10</span>шт.</div>
+                                </div>
+                                <div class="sales-hits__slider-item swiper-slide">
+                                    <button class="add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="sales-hits__slider-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="sales-hits__slider-item-title">BMW</div>
+                                    <a href="#" class="sales-hits__slider-item-text">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium?
+                                    </a>
+                                    <div class="sales-hits__slider-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    <div class="sales-hits__slider-item-price">10000$</div>
+                                    <button class="sales-hits__slider-item-toBasket">В корзину</button>
+                                    <div class="sales-hits__slider-item-availability">Наличие > <span>10</span>шт.</div>
+                                </div>
+                                <div class="sales-hits__slider-item swiper-slide">
+                                    <button class="add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="sales-hits__slider-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="sales-hits__slider-item-title">BMW</div>
+                                    <a href="#" class="sales-hits__slider-item-text">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium?
+                                    </a>
+                                    <div class="sales-hits__slider-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    <div class="sales-hits__slider-item-price">10000$</div>
+                                    <button class="sales-hits__slider-item-toBasket">В корзину</button>
+                                    <div class="sales-hits__slider-item-availability">Наличие > <span>10</span>шт.</div>
+                                </div>
+                                <div class="sales-hits__slider-item swiper-slide">
+                                    <button class="add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="sales-hits__slider-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="sales-hits__slider-item-title">BMW</div>
+                                    <a href="#" class="sales-hits__slider-item-text">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium?
+                                    </a>
+                                    <div class="sales-hits__slider-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    <div class="sales-hits__slider-item-price">10000$</div>
+                                    <button class="sales-hits__slider-item-toBasket">В корзину</button>
+                                    <div class="sales-hits__slider-item-availability">Наличие > <span>10</span>шт.</div>
+                                </div>
+                                <div class="sales-hits__slider-item swiper-slide">
+                                    <button class="add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="sales-hits__slider-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="sales-hits__slider-item-title">BMW</div>
+                                    <a href="#" class="sales-hits__slider-item-text">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium?
+                                    </a>
+                                    <div class="sales-hits__slider-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    <div class="sales-hits__slider-item-price">10000$</div>
+                                    <button class="sales-hits__slider-item-toBasket">В корзину</button>
+                                    <div class="sales-hits__slider-item-availability">Наличие > <span>10</span>шт.</div>
+                                </div>
+                                <div class="sales-hits__slider-item swiper-slide">
+                                    <button class="add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="sales-hits__slider-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="sales-hits__slider-item-title">BMW</div>
+                                    <a href="#" class="sales-hits__slider-item-text">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium?
+                                    </a>
+                                    <div class="sales-hits__slider-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    <div class="sales-hits__slider-item-price">10000$</div>
+                                    <button class="sales-hits__slider-item-toBasket">В корзину</button>
+                                    <div class="sales-hits__slider-item-availability">Наличие > <span>10</span>шт.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sales-hits__slider-btns">
+                        <div class="sales-hits__slider-btn-prev">
+                            <svg class="prev-btn">
+                                <use xlink:href="sprite.svg#prev-btn"></use>
+                            </svg>
+                        </div>
+                        <div class="sales-hits__slider-btn-next">
+                            <svg class="next-btn">
+                                <use xlink:href="sprite.svg#next-btn"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="watched">
+                <div class="container">
+                    <div class="watched__wrapper">
+                        <div class="watched__title">Вы смотрели ранее</div>
+                        <div class="watched__divider"></div>
+                        <div class="watched__slider">
+                            <div class="watched__slider-wrapper swiper-wrapper">
+                                <div class="watched__slider-item swiper-slide">
+                                    <button class="add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="watched__slider-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="watched__slider-item-title">BMW</div>
+                                    <a href="#" class="watched__slider-item-text">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium?
+                                    </a>
+                                    <div class="watched__slider-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    <div class="watched__slider-item-price">10000$</div>
+                                    <button class="watched__slider-item-toBasket">В корзину</button>
+                                    <div class="watched__slider-item-availability">Наличие > <span>10</span>шт.</div>
+                                </div>
+                                <div class="watched__slider-item swiper-slide">
+                                    <button class="add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="watched__slider-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="watched__slider-item-title">BMW</div>
+                                    <a href="#" class="watched__slider-item-text">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium?
+                                    </a>
+                                    <div class="watched__slider-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    <div class="watched__slider-item-price">10000$</div>
+                                    <button class="watched__slider-item-toBasket">В корзину</button>
+                                    <div class="watched__slider-item-availability">Наличие > <span>10</span>шт.</div>
+                                </div>
+                                <div class="watched__slider-item swiper-slide">
+                                    <button class="add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="watched__slider-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="watched__slider-item-title">BMW</div>
+                                    <a href="#" class="watched__slider-item-text">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium?
+                                    </a>
+                                    <div class="watched__slider-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    <div class="watched__slider-item-price">10000$</div>
+                                    <button class="watched__slider-item-toBasket">В корзину</button>
+                                    <div class="watched__slider-item-availability">Наличие > <span>10</span>шт.</div>
+                                </div>
+                                <div class="watched__slider-item swiper-slide">
+                                    <button class="add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="watched__slider-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="watched__slider-item-title">BMW</div>
+                                    <a href="#" class="watched__slider-item-text">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium?
+                                    </a>
+                                    <div class="watched__slider-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    <div class="watched__slider-item-price">10000$</div>
+                                    <button class="watched__slider-item-toBasket">В корзину</button>
+                                    <div class="watched__slider-item-availability">Наличие > <span>10</span>шт.</div>
+                                </div>
+                                <div class="watched__slider-item swiper-slide">
+                                    <button class="add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="watched__slider-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="watched__slider-item-title">BMW</div>
+                                    <a href="#" class="watched__slider-item-text">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium?
+                                    </a>
+                                    <div class="watched__slider-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    <div class="watched__slider-item-price">10000$</div>
+                                    <button class="watched__slider-item-toBasket">В корзину</button>
+                                    <div class="watched__slider-item-availability">Наличие > <span>10</span>шт.</div>
+                                </div>
+                                <div class="watched__slider-item swiper-slide">
+                                    <button class="add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="watched__slider-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="watched__slider-item-title">BMW</div>
+                                    <a href="#" class="watched__slider-item-text">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium?
+                                    </a>
+                                    <div class="watched__slider-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    <div class="watched__slider-item-price">10000$</div>
+                                    <button class="watched__slider-item-toBasket">В корзину</button>
+                                    <div class="watched__slider-item-availability">Наличие > <span>10</span>шт.</div>
+                                </div>
+                                <div class="watched__slider-item swiper-slide">
+                                    <button class="add-to-fav">
+                                        <svg class="favorite-btn">
+                                            <use xlink:href="sprite.svg#favorite-btn"></use>
+                                        </svg>
+                                    </button>
+                                    <img class="watched__slider-item-img" src="images/categories/shini.jpg" alt="">
+                                    <div class="watched__slider-item-title">BMW</div>
+                                    <a href="#" class="watched__slider-item-text">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium?
+                                    </a>
+                                    <div class="watched__slider-item-art">Арт: <span>102 05 08-N0</span></div>
+                                    <div class="watched__slider-item-price">10000$</div>
+                                    <button class="watched__slider-item-toBasket">В корзину</button>
+                                    <div class="watched__slider-item-availability">Наличие > <span>10</span>шт.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="watched__slider-btns">
+                        <div class="watched__slider-btn-prev">
+                            <svg class="prev-btn">
+                                <use xlink:href="sprite.svg#prev-btn"></use>
+                            </svg>
+                        </div>
+                        <div class="watched__slider-btn-next">
+                            <svg class="next-btn">
+                                <use xlink:href="sprite.svg#next-btn"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mailing">
+                <div class="container">
+                    <div class="mailing__wrapper">
+                        <svg class="mailing__icon">
+                            <use xlink:href="sprite.svg#mailer-icon"></use>
+                        </svg>
+                        <div class="mailing__text">Получайте самые выгодные предложения первыми!</div>
+                        <form class="mailing__form">
+                            <input class="mailing__form-input" type="text" placeholder="Введите e-mail">
+                            <button class="mailing__form-btn" type="submit">Подписаться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="container">
+                    <div class="footer__top-inner">
+                        <div class="footer__left">
+                            <a href="#" class="footer__logo">
+                                <img src="images/logo.png" alt="">
+                            </a>
+                            <a href="#" class="footer__telephone">
+                                +7(495) 138-41-82
+                            </a> 
+                            <p class="footer__telephone-info">Приём звонков: 9:00 - 22:00</p>
+                            <a href="mailto:info@autostore.ru" class="footer__email">info@autostore.ru</a>
+                            <div class="footer__social">
+                                <a href="#" class="footer__social-link">
+                                    <svg class="telegram-icon">
+                                        <use xlink:href="sprite.svg#telegram-svg"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="footer__social-link">
+                                    <svg class="vk-icon">
+                                        <use xlink:href="sprite.svg#vk-svg"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <p class="footer__item-title">Найди это быстро</p>
+                            <div class="footer__item-inner">
+                                <ul class="footer__item-menu">
+                                    <li class="footer__item-list">
+                                        <a href="#" class="footer__item-link">Выкуп автомобилей</a>
+                                    </li>
+                                    <li class="footer__item-list">
+                                        <a href="#" class="footer__item-link">Cтрахование</a>
+                                    </li>
+                                    <li class="footer__item-list">
+                                        <a href="#" class="footer__item-link">Помощь</a>
+                                    </li>
+                                    <li class="footer__item-list">
+                                        <a href="#" class="footer__item-link">Доставка</a>
+                                    </li>
+                                    <li class="footer__item-list">
+                                        <a href="#" class="footer__item-link">Контакты</a>
+                                    </li>
+                                    <li class="footer__item-list">
+                                        <a href="#" class="footer__item-link">О нас</a>
+                                    </li>
+                                </ul>
+                                <div class="footer__item-inner-links">
+                                    <a href="#" class="footer__item-inner-link">Положение об обработке и защите персональных данных</a>
+                                    <a href="#" class="footer__item-inner-link">Пользовательское соглашение</a>
+                                    <a href="#" class="footer__item-inner-link">Договор оферты</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__right">
+                            <a href="#" class="footer__right-link">
+                                <img src="images/appstore.svg" alt="">
+                            </a>
+                            <a href="#" class="footer__right-link">
+                                <img src="images/googleplay.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__bottom-inner">
+                        <p class="footer__bottom-info">
+                            AUTOSTORE © 2022 | Все права защищены
+                        </p>
+                        <div class="footer__bottom-pay">
+                            <img src="images/mastercard.svg" alt="">
+                            <img src="images/visa-logo.svg" alt="">
+                            <img src="images/PayPal.svg" alt="">
+                            <img src="images/maestro.svg" alt="">
+                            <img src="images/mircard.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/swiper-boundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
