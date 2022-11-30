@@ -407,6 +407,7 @@
                     outline: none;
                     border: 1px solid var(--divider);
                     border-radius: 5px;
+                    background-color: var(--white);
                 }
                 textarea {
                     width: 100%;
@@ -420,6 +421,7 @@
                     border-radius: 5px;
                     resize: vertical;
                     overflow: auto;
+                    background-color: var(--white);
                 }
                 &:nth-child(1) {
                     grid-area: 1 / 1 / 2 / 2;

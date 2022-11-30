@@ -875,81 +875,64 @@ window.addEventListener('DOMContentLoaded', () => {
     } catch(e) {}
 
     try {
-        const pickupSelect = document.querySelector('.clientinfo__form-type-delivery-pickup');
+        const pickupSelect = document.querySelectorAll('.pickupSelect');
         const pickupAddress = document.querySelector('.pickupaddress');
-        const deliverySelect = document.querySelector('.clientinfo__form-type-delivery-delivery');
+        const deliverySelect = document.querySelectorAll('.deliverySelect');
         const delAddress =document.querySelector('.deladdress');
-        const yandexDelSelect = document.querySelector('.clientinfo__form-type-delivery-yandex');
+        const yandexDelSelect = document.querySelectorAll('.yandexDelSelect');
         const yandexDelAdress =document.querySelector('.yandexdel');
+        const  select = document.querySelector('.clientinfo__selected');
+        const  selectOptions = document.querySelectorAll('.clientinfo__select-menu li');
 
-        pickupSelect.addEventListener('click', () => {
-            if(delAddress.classList.contains('hidden') && yandexDelAdress.classList.contains('hidden')) {
-                return pickupAddress;
-            } else {
-                yandexDelAdress.classList.add('hidden');
-                delAddress.classList.add('hidden');
-                pickupAddress.classList.remove('hidden');
-            }
+        pickupSelect.forEach(pickup => {
+            pickup.addEventListener('click', () => {
+                if(delAddress.classList.contains('hidden') && yandexDelAdress.classList.contains('hidden')) {
+                    return pickupAddress;
+                } else {
+                    yandexDelAdress.classList.add('hidden');
+                    delAddress.classList.add('hidden');
+                    pickupAddress.classList.remove('hidden');
+                    pickupSelect[0].checked = true;
+                    pickupSelect[1].classList.add('active');
+                    deliverySelect[1].classList.remove('active');
+                    yandexDelSelect[1].classList.remove('active');
+                    select.innerText = selectOptions[0].innerText;
+                }
+            });
         });
 
-        deliverySelect.addEventListener('click', () => {
-            if(pickupAddress.classList.contains('hidden') && yandexDelAdress.classList.contains('hidden')) {
-                return delAddress;
-            } else {
-                pickupAddress.classList.add('hidden');
-                yandexDelAdress.classList.add('hidden');
-                delAddress.classList.remove('hidden');
-            }
+        deliverySelect.forEach(delivery => {
+            delivery.addEventListener('click', () => {
+                if(pickupAddress.classList.contains('hidden') && yandexDelAdress.classList.contains('hidden')) {
+                    return delAddress;
+                } else {
+                    pickupAddress.classList.add('hidden');
+                    yandexDelAdress.classList.add('hidden');
+                    delAddress.classList.remove('hidden');
+                    deliverySelect[0].checked = true;
+                    pickupSelect[1].classList.remove('active');
+                    deliverySelect[1].classList.add('active');
+                    yandexDelSelect[1].classList.remove('active');
+                    select.innerText = selectOptions[1].innerText;
+                }
+            });
         });
         
-        yandexDelSelect.addEventListener('click', () => {
-            if(pickupAddress.classList.contains('hidden') && delAddress.classList.contains('hidden')) {
-                return yandexDelAdress;
-            } else {
-                pickupAddress.classList.add('hidden');
-                delAddress.classList.add('hidden');
-                yandexDelAdress.classList.remove('hidden');
-
-            }
-        });
-    } catch(e) {}
-
-    try {
-        const pickupSelect = document.querySelector('.pickup-select');
-        const pickupAddress = document.querySelector('.pickupaddress');
-        const deliverySelect = document.querySelector('.delivery-select');
-        const delAddress =document.querySelector('.deladdress');
-        const yandexDelSelect = document.querySelector('.yandexdel-select');
-        const yandexDelAdress =document.querySelector('.yandexdel');
-
-        pickupSelect.addEventListener('click', () => {
-            if(delAddress.classList.contains('hidden') && yandexDelAdress.classList.contains('hidden')) {
-                return pickupAddress;
-            } else {
-                yandexDelAdress.classList.add('hidden');
-                delAddress.classList.add('hidden');
-                pickupAddress.classList.remove('hidden');
-            }
-        });
-
-        deliverySelect.addEventListener('click', () => {
-            if(pickupAddress.classList.contains('hidden') && yandexDelAdress.classList.contains('hidden')) {
-                return delAddress;
-            } else {
-                pickupAddress.classList.add('hidden');
-                yandexDelAdress.classList.add('hidden');
-                delAddress.classList.remove('hidden');
-            }
-        });
-        
-        yandexDelSelect.addEventListener('click', () => {
-            if(pickupAddress.classList.contains('hidden') && delAddress.classList.contains('hidden')) {
-                return yandexDelAdress;
-            } else {
-                pickupAddress.classList.add('hidden');
-                delAddress.classList.add('hidden');
-                yandexDelAdress.classList.remove('hidden');
-            }
+        yandexDelSelect.forEach(yandexDel => {
+            yandexDel.addEventListener('click', () => {
+                if(pickupAddress.classList.contains('hidden') && delAddress.classList.contains('hidden')) {
+                    return yandexDelAdress;
+                } else {
+                    pickupAddress.classList.add('hidden');
+                    delAddress.classList.add('hidden');
+                    yandexDelAdress.classList.remove('hidden');
+                    yandexDelSelect[0].checked = true;
+                    pickupSelect[1].classList.remove('active');
+                    deliverySelect[1].classList.remove('active');
+                    yandexDelSelect[1].classList.add('active');
+                    select.innerText = selectOptions[2].innerText;
+                }
+            });
         });
     } catch(e) {}
 
